@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.dark {
+  background-color: #080808 !important;
+  color: #fff !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light {
+  background-color: #fff !important;
+  color: #080808;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 8px;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.chatbot-container {
+  min-height: 80px;
+  min-width: 100px;
+  border-radius: 8px;
+  padding: 16px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chatbot-messages {
+  height: 400px;
+  overflow: auto;
+  padding: 8px;
+}
+.message {
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.user-message {
+  text-align: right !important;
+}
+.ai-message {
+  text-align: start;
+}
+.chatbot-input-form {
+  display: flex;
+  margin-top: 1px;
+}
+.chatbot-input-form input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  font-size: 12px;
+}
+.chatbot-input-form button {
+  padding: 8px 8px;
+  border-radius: 0 4px 4px 0;
+  font-size: 12px;
+  cursor: pointer;
 }
